@@ -1,0 +1,90 @@
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/gemm; make clean; make; ./gemm
+gcc -o gemm gemm.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+6.446979
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/gemver; make clean; make; ./gemver
+gcc -o gemver gemver.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.073450
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/gesummv; make clean; make; ./gesummv
+gcc -o gesummv gesummv.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.012819
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/symm; make clean; make; ./symm
+gcc -o symm symm.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+9.226759
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/syr2k; make clean; make; ./syr2k
+gcc -o syr2k syr2k.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+12.160297
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/syrk; make clean; make; ./syrk
+gcc -o syrk syrk.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+6.033712
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/trmm; make clean; make; ./trmm
+gcc -o trmm trmm.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+5.973139
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/2mm; make clean; make; ./2mm
+gcc -o 2mm 2mm.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+15.204014
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/3mm; make clean; make; ./3mm
+gcc -o 3mm 3mm.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+27.673545
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/atax; make clean; make; ./atax
+gcc -o atax atax.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.032100
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/bicg; make clean; make; ./bicg
+gcc -o bicg bicg.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.069980
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/doitgen; make clean; make; ./doitgen
+gcc -o doitgen doitgen.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+2.815110
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/mvt; make clean; make; ./mvt
+gcc -o mvt mvt.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.049353
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/cholesky; make clean; make; ./cholesky
+gcc -o cholesky cholesky.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c -lm
+6.777990
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/durbin; make clean; make; ./durbin
+gcc -o durbin durbin.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.021866
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/gramschmidt; make clean; make; ./gramschmidt
+gcc -o gramschmidt gramschmidt.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c -lm
+18.859052
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/lu; make clean; make; ./lu
+gcc -o lu lu.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+21.985829
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/ludcmp; make clean; make; ./ludcmp
+gcc -o ludcmp ludcmp.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+17.473368
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/trisolv; make clean; make; ./trisolv
+gcc -o trisolv trisolv.c -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.008648
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//datamining/correlation; make clean; make; ./correlation
+gcc -o correlation correlation.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c -lm
+12.731231
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//datamining/covariance; make clean; make; ./covariance
+gcc -o covariance covariance.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+12.328833
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/adi; make clean; make; ./adi
+gcc -o adi adi.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+26.586020
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/fdtd-2d; make clean; make; ./fdtd-2d
+gcc -o fdtd-2d fdtd-2d.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+11.615043
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/heat-3d; make clean; make; ./heat-3d
+gcc -o heat-3d heat-3d.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+41.534296
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/jacobi-1d; make clean; make; ./jacobi-1d
+gcc -o jacobi-1d jacobi-1d.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+0.009125
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/jacobi-2d; make clean; make; ./jacobi-2d
+gcc -o jacobi-2d jacobi-2d.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+14.338253
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/seidel-2d; make clean; make; ./seidel-2d
+gcc -o seidel-2d seidel-2d.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+37.685049
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//medley/deriche; make clean; make; ./deriche
+gcc -o deriche deriche.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+Makefile:6: recipe for target 'deriche' failed
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//medley/floyd-warshall; make clean; make; ./floyd-warshall
+gcc -o floyd-warshall floyd-warshall.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+99.296030
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//medley/nussinov; make clean; make; ./nussinov
+gcc -o nussinov nussinov.c -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+24.005835

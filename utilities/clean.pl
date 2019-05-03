@@ -35,7 +35,7 @@ foreach $cat (@categories) {
         next if (!(-d $target.'/'.$dir));
 
         my $targetDir = $target.'/'.$dir;
-        my $command = "cd $targetDir; make clean; rm -f Makefile";
+        my $command = "cd $targetDir; make clean; rm -f Makefile; rm -f *.txt";
         print($command."\n");
         system($command);
    }

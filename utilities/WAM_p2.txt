@@ -1,0 +1,90 @@
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/gemm; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./gemm.js 2>> out_emcc_2.txt
+emcc -o gemm.js gemm.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+3.892000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/gemver; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./gemver.js 2>> out_emcc_2.txt
+emcc -o gemver.js gemver.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.058000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/gesummv; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./gesummv.js 2>> out_emcc_2.txt
+emcc -o gesummv.js gesummv.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.010000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/symm; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./symm.js 2>> out_emcc_2.txt
+emcc -o symm.js symm.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+6.647000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/syr2k; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./syr2k.js 2>> out_emcc_2.txt
+emcc -o syr2k.js syr2k.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+8.876000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/syrk; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./syrk.js 2>> out_emcc_2.txt
+emcc -o syrk.js syrk.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+3.232000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/blas/trmm; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./trmm.js 2>> out_emcc_2.txt
+emcc -o trmm.js trmm.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+5.196000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/2mm; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./2mm.js 2>> out_emcc_2.txt
+emcc -o 2mm.js 2mm.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+9.616000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/3mm; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./3mm.js 2>> out_emcc_2.txt
+emcc -o 3mm.js 3mm.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+19.944000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/atax; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./atax.js 2>> out_emcc_2.txt
+emcc -o atax.js atax.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.025000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/bicg; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./bicg.js 2>> out_emcc_2.txt
+emcc -o bicg.js bicg.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.019000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/doitgen; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./doitgen.js 2>> out_emcc_2.txt
+emcc -o doitgen.js doitgen.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+2.989000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/kernels/mvt; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./mvt.js 2>> out_emcc_2.txt
+emcc -o mvt.js mvt.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.043000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/cholesky; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./cholesky.js 2>> out_emcc_2.txt
+emcc -o cholesky.js cholesky.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c -lm
+9.481000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/durbin; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./durbin.js 2>> out_emcc_2.txt
+emcc -o durbin.js durbin.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.018000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/gramschmidt; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./gramschmidt.js 2>> out_emcc_2.txt
+emcc -o gramschmidt.js gramschmidt.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c -lm
+33.738000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/lu; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./lu.js 2>> out_emcc_2.txt
+emcc -o lu.js lu.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+19.755000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/ludcmp; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./ludcmp.js 2>> out_emcc_2.txt
+emcc -o ludcmp.js ludcmp.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+16.986000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//linear-algebra/solvers/trisolv; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./trisolv.js 2>> out_emcc_2.txt
+emcc -o trisolv.js trisolv.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../../utilities ../../../utilities/polybench.c 
+0.013000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//datamining/correlation; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./correlation.js 2>> out_emcc_2.txt
+emcc -o correlation.js correlation.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c -lm
+15.698000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//datamining/covariance; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./covariance.js 2>> out_emcc_2.txt
+emcc -o covariance.js covariance.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+15.519000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/adi; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./adi.js 2>> out_emcc_2.txt
+emcc -o adi.js adi.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+31.050000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/fdtd-2d; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./fdtd-2d.js 2>> out_emcc_2.txt
+emcc -o fdtd-2d.js fdtd-2d.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+10.666000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/heat-3d; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./heat-3d.js 2>> out_emcc_2.txt
+emcc -o heat-3d.js heat-3d.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+24.249000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/jacobi-1d; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./jacobi-1d.js 2>> out_emcc_2.txt
+emcc -o jacobi-1d.js jacobi-1d.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+0.008000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/jacobi-2d; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./jacobi-2d.js 2>> out_emcc_2.txt
+emcc -o jacobi-2d.js jacobi-2d.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+13.497000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//stencils/seidel-2d; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./seidel-2d.js 2>> out_emcc_2.txt
+emcc -o seidel-2d.js seidel-2d.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+56.401000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//medley/deriche; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./deriche.js 2>> out_emcc_2.txt
+emcc -o deriche.js deriche.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+0.922000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//medley/floyd-warshall; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./floyd-warshall.js 2>> out_emcc_2.txt
+emcc -o floyd-warshall.js floyd-warshall.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+114.190000
+cd /home/yangqi/polybenchC/PolyBenchC-4.2.1//medley/nussinov; make clean; make; /home/yangqi/V8/v8/v8/out/x64.release/d8 ./nussinov.js 2>> out_emcc_2.txt
+emcc -o nussinov.js nussinov.c -s ASSERTIONS=1 -s ALLOW_MEMORY_GROWTH=1 -DPOLYBENCH_TIME -I. -I../../utilities ../../utilities/polybench.c 
+21.404000
