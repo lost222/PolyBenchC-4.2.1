@@ -62,10 +62,10 @@ include $configFile
 EXTRA_FLAGS=$extra_flags{$kernel}
 
 $kernel: $kernel.c $kernel.h
-	\${VERBOSE} \${CC} -o $kernel.js $kernel.c \${CFLAGS} -I. -I$utilityDir $utilityDir/polybench.c \${EXTRA_FLAGS}
+	\${VERBOSE} \${CC} -o $kernel.html $kernel.c \${CFLAGS} -I. -I$utilityDir $utilityDir/polybench.c \${EXTRA_FLAGS}
 
 clean:
-	@ rm -f $kernel.js $kernel.wasm
+	@ rm -f $kernel.js $kernel.wasm $kernel.html
 
 EOF
 
